@@ -1,0 +1,54 @@
+body{
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+}
+
+.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.image-up {
+      animation: bounce-up 1s infinite alternate;
+      -webkit-animation: bounce-up 1s infinite alternate;
+    }
+    @keyframes bounce-up {
+      from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(-55px);
+      }
+    }
+    @-webkit-keyframes image-up {
+      from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(-55px);
+      }
+    }
+
+.image-down {
+      animation: bounce-down 1s infinite alternate;
+      -webkit-animation: bounce-down 1s infinite alternate;
+    }
+    @keyframes bounce-down {
+      from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(55px);
+      }
+    }
+    @-webkit-keyframes image-down {
+      from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(55px);
+      }
+    }

@@ -11,6 +11,14 @@ body{
     transform: translate(-50%, -50%);
 }
 
+.top-10{
+  margin-top: 10%;
+}
+
+
+/*Preloader Css*/
+/*Boxes Bouncing Css*/
+
 .image-up {
       animation: bounce-up 1s infinite alternate;
       -webkit-animation: bounce-up 1s infinite alternate;
@@ -52,3 +60,21 @@ body{
         transform: translateY(55px);
       }
     }
+
+/*Prealoader Line Css*/
+
+.linePreloader{
+    height:4px;
+    background:linear-gradient(to right, #FFA31A,rgb(255, 154, 1));
+    border-radius:4px;
+    background-size:20%;
+    background-repeat:repeat-y;
+    background-position:-25% 0;
+    animation:scroll 1.2s ease-in-out infinite;
+  }
+  
+  @keyframes scroll{
+    50%{background-size:80%}
+    100%{background-position:125% 0;}
+  }
+
